@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    font-family: 'Courier New', 'Courier New', Courier, monospace, serif
+}
+html{
+    border: 1px solid gray;
+}

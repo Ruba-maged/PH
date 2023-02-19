@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/DHome.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Homepage</title>
+    <link rel="stylesheet" href="./Doctor_Homepage_files/style.css">
+    <style type="text/css"></style>
+</head>
+<body style="background-color: rgb(178, 200, 214); color: darkblue; font-family: 'Courier New', Courier, monospace;">
+  <div class="header">
+    <div class="side-nav">
+      <a href="http://127.0.0.1:5500/ph/project.html">
+        <img src="Capture.PNG" class="logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-user"></i>
+            <p>Account</p></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-list"></i>
+            <p>To-Do</p></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-gear"></i>
+            <p>Settings</p></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-right-from-bracket"></i>
+            <p>Logout</p></a
+          >
+        </li>
+        <div class="active"></div>
+      </ul>
+    </div>
+    <div class="main-content">
+            <p style="font-size: 100px;font-style: italic;font-weight: bold;font-family: &#39;Courier New&#39;, Courier, monospace;margin-top: -100px;margin-left: 150px;">Doctor Page</p>
+            <a href="http://127.0.0.1:5500/DHome.html#"><button style="background-color: #5889a7; color: white; height: 100px; width: 500px; font-size: 50px; font-family: &#39;Courier New&#39;, Courier, monospace; margin-top: 30px; border-radius: 10px; margin-left: 200px;">Your Patients</button><br>
+            </a><a href="http://127.0.0.1:5500/DHome.html#"><button style="background-color: #5889a7; color: white; height: 100px; width: 500px; font-size: 50px; font-family: &#39;Courier New&#39;, Courier, monospace; margin-top: 20px; border-radius: 10px; margin-left: 200px;">Meetings</button><br>
+            </a><a href="http://127.0.0.1:5500/DHome.html#"><button style="background-color: #5889a7; color: white; height: 100px; width: 500px; font-size: 40px; font-family: &#39;Courier New&#39;, Courier, monospace; margin-top: 20px; border-radius: 10px; margin-left: 200px;">Doctors' Community</button><br>
+            </a><a href="http://127.0.0.1:5500/DHome.html#"><button style="background-color: #5889a7; color: white; height: 100px; width: 500px; font-size: 50px; font-family: &#39;Courier New&#39;, Courier, monospace; margin-top: 20px; border-radius: 10px; margin-left: 200px;">Reports</button><br>
+    </a></div><a href="http://127.0.0.1:5500/DHome.html#">
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</a>
+</div>
+</body>
+</html>

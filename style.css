@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', 'Courier New', Courier, monospace, serif;
+}
+
+.side-nav{
+    width: 250px;
+    height: 100%;
+    background: #5889a7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+
+}
+
+.main-content{
+    position: relative;
+    left: 300px;
+    top: 100px;
+    height: 100vh;
+}
+.logo{
+    display: block;
+    margin-bottom: 130px;
+}
+.logo-img{
+    width: 200px;
+}
+.nav-links{
+    list-style: none;
+    position: relative;
+}
+.nav-links li{
+    padding: 10px 0px;
+}
+.nav-links li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+}
+.nav-links li a{
+    font-size: 22px;
+    margin-right: 20px;
+}
+.active{
+    background: #fff;
+    width: 90%;
+    height: 47px;
+    position: absolute;
+    top: 2.6%;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+    display: none;
+    transition: top 0.5s;
+}
+.nav-links li:hover a{
+    color: #5889a7;    
+    transition: 0.3s;
+}
+.nav-links li:hover ~ .active{
+    display: block;
+}
+.nav-links li:nth-child(1):hover ~ .active{
+    top: 2.6%;
+}
+.nav-links li:nth-child(2):hover ~ .active{
+    top: 27.2%;
+}
+.nav-links li:nth-child(3):hover ~ .active{
+    top: 52.6%;
+}
+.nav-links li:nth-child(4):hover ~ .active{
+    top: 77.6%;
+}
